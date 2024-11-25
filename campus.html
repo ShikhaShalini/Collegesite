@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Page - Parallax Animation</title>
+    <style>
+        /* Global styles */
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Parallax container */
+        
+        .parallax-container {
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+            height: 100vh;
+        }
+        /* Parallax layers */
+        
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Parallax images */
+        
+        .parallax-img {
+            position: fixed;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+        /* Content */
+        
+        .content {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        /* Header */
+        
+        h1 {
+            font-size: 3em;
+        }
+        /* Parallax effect */
+        
+        .parallax-layer-bg1 {
+            animation: parallax-bg1 10s linear infinite;
+        }
+        
+        .parallax-layer-bg2 {
+            animation: parallax-bg2 15s linear infinite;
+        }
+        
+        .parallax-layer-bg3 {
+            animation: parallax-bg3 20s linear infinite;
+        }
+        
+        @keyframes parallax-bg1 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+        
+        @keyframes parallax-bg2 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+        
+        @keyframes parallax-bg3 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Parallax container -->
+    <div class="parallax-container">
+
+        <!-- Parallax layers -->
+        <div class="parallax-layer parallax-layer-bg1">
+            <!-- Background image 1 -->
+            <video class="parallax-img" src="https://videos.pexels.com/video-files/3288308/3288308-sd_640_360_30fps.mp4" alt="Background 1"></video>
+        </div>
+
+        <div class="parallax-layer parallax-layer-bg2">
+            <!-- Background image 2 -->
+            <video class="parallax-img" src="https://videos.pexels.com/video-files/6209575/6209575-sd_960_506_25fps.mp4" alt="Background 2"></video>
+        </div>
+
+        <div class="parallax-layer parallax-layer-bg3">
+            <!-- Background image 3 -->
+            <video class="parallax-img" src="https://videos.pexels.com/video-files/854417/854417-sd_640_360_25fps.mp4" alt="Background 3"></video>
+        </div>
+
+        <!-- Content -->
+        <div class="parallax-layer content">
+            <!-- Content goes here -->
+            <h1>Welcome to Our College</h1>
+            <h2>GET READY FOR YOUR VIRTUAL CAMPUS TOUR</h2>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

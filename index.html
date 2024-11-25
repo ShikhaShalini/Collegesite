@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college website</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-color: #000;
+        }
+        
+        .univer {
+            margin-top: 0;
+        }
+        
+        .uni {
+            width: 100%;
+            height: 600px;
+            background: #000;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .uni h1,
+        h2 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: bold;
+            color: blue;
+            font-family: monospace;
+        }
+        
+        .uni p {
+            color: white;
+        }
+        
+        .section {
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            font-size: 2vh;
+            color: white;
+        }
+        
+        #section1 {
+            background: linear-gradient(blue, pink);
+        }
+        
+        #section3 {
+            background: linear-gradient(red, yellow);
+        }
+        
+        .content {
+            max-width: 800px;
+        }
+        
+        .animate {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        
+        .active .animate {
+            opacity: 1;
+        }
+        
+        .container {
+            max-width: 200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .share-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            max-width: 20px;
+            margin-left: 60px;
+        }
+        
+        .share-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #000;
+            text-decoration: none;
+            transition: color 1.4s all;
+        }
+        
+        .share-icons img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.5s ease-in;
+        }
+        
+        .share-icons a:hover {
+            color: #007bff;
+        }
+        
+        .share-text {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">UNIVERSITY OF INDIA</a></li>
+            <li><a href="#">HOME</a></li>
+            <li class="dropdown">
+                <a href="#">ABOUT</a>
+                <div class="dropdown-content">
+                    <a href="field.html">COURSES OFFERED</a>
+                    <a href="nation.html">ADMISSION</a>
+                    <a href="campus.html">CAMPUS TOUR</a>
+                    <a href="heads.html">KNOW OUR HEAD</a>
+                    <a href="#uni">WHY UOI</a>
+                </div>
+            </li>
+            <li><a href="appry.html">APPLY/ENQUIRY</a></li>
+            <li><a href="#section1">CONTACT</a></li>
+            <li><a href="#section3">SHARE</a></li>
+        </ul>
+    </nav>
+    <div class="univer">
+        <img src="C:\Users\HP\Desktop\projects\E-commerce\clg site\Project\bg.jpg" alt="college campus" height="580" width="1350">
+    </div>
+    <div id="uni" class="uni">
+        <h1>Welcome to UNIVERSITY OF INDIA!</h1>
+        <h2>where passion meets purpose, and the possibilities are endless.</h2>
+        <p>At UNIVERSITY OF INDIA, we foster a vibrant community of scholars, thinkers, and innovators dedicated to pushing the boundaries of knowledge and shaping the leaders of tomorrow. Situated at the crossroads of academic excellence and real-world
+            impact, our institution offers a dynamic learning environment where students can thrive both personally and intellectually.</p>
+
+        <p>Our commitment to academic excellence is evident in our distinguished faculty, who are experts in their fields and dedicated mentors invested in the success of our students. Through innovative teaching methods and hands-on learning experiences,
+            we empower our students to explore their passions, think critically, and develop the skills needed to excel in their chosen fields.</p>
+
+        <p>As a research-intensive university, we are at the forefront of groundbreaking discoveries and advancements that address the world’s most pressing challenges. Whether it’s through scientific breakthroughs, technological innovations, or social initiatives,
+            our faculty and students are actively engaged in shaping a better future for all.</p>
+
+        <p>Life at University Of India is about more than just academics, it's about community, connection, and personal growth. Our campus is home to a vibrant and diverse community of students from all walks of life, united by a shared passion for learning
+            and a commitment to making a difference in the world.</p>
+
+        <p>From student-run clubs and organizations to cultural events and recreational activities, there are countless ways to get involved and make memories that will last a lifetime. Whether you're cheering on our varsity sports teams, participating in
+            community service projects, or attending a performance at the campus theater, you'll find plenty of opportunities to explore your interests, develop your talents, and forge lifelong friendships.</p>
+
+        <p>Beyond the classroom and the laboratory, UNIVERSITY OF INDIA offers a vibrant campus life enriched by a diverse array of extracurricular activities, clubs, and organizations. From cultural events and community service projects to athletic competitions
+            and entrepreneurial ventures, there are countless opportunities for students to explore their interests, make meaningful connections, and contribute to the campus community.</p>
+
+        <p>At UNIVERSITY OF INDIA, we embrace diversity and inclusion as essential values that enrich the educational experience and foster understanding among people from all backgrounds. We are proud to cultivate a welcoming and supportive environment
+            where individuals are empowered to express themselves, learn from one another, and embrace the richness of our shared humanity.</p>
+
+        <p>As you explore our website, we invite you to discover the myriad opportunities available at [University Name] and envision yourself as part of our dynamic community. Whether you are a prospective student, a current student, an alum, a faculty
+            member, or a friend of the university, we welcome you to join us on our journey of discovery, innovation, and growth.</p>
+
+
+    </div>
+    <footer>
+        <div id="section1" class="section active">
+            <div class="content animate">
+                <h1>Contact Information</h1>
+                <h2>Contact us via phone or email:</h2>
+                <p>Phone: +1234567890</p>
+                <p>Email: universityofindia@gmail.com</p>
+                <p>Address: Plot.98, knowledge park4, Greater Noida, India</p>
+            </div>
+        </div>
+        <div id="section3" class="section">
+            <div class="container">
+                <h2>Share This Page</h2>
+                <div class="share-icons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.com" target="_blank" title="Share on Facebook"><img src="C:\Users\HP\Desktop\projects\E-commerce\clg site\Project\fb.jpg" alt="Facebook"></a>
+                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com&text=Check%20out%20this%20awesome%20website%21" target="_blank" title="Share on Twitter"><img src="C:\Users\HP\Desktop\projects\E-commerce\clg site\Project\twitter.jpg" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fexample.com" target="_blank" title="Share on LinkedIn"><img src="C:\Users\HP\Desktop\projects\E-commerce\clg site\Project\in.jpg" alt="LinkedIn"></a>
+                    <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20awesome%20website!%20https%3A%2F%2Fexample.com" target="_blank" title="Share on WhatsApp"><img src="C:\Users\HP\Desktop\projects\E-commerce\clg site\Project\wa.jpg" alt="WhatsApp"></a>
+                    <a href="https://www.instagram.com/?url=https%3A%2F%2Fexample.com" target="_blank" title="Share on Instagram"><img src="C:\Users\HP\Desktop\projects\E-commerce\clg site\Project\ig.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

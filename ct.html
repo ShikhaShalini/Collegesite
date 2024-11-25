@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Tour Animation</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    animation: infinite;
+  }
+  .content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="section" id="welcome" style="background-image: url('C:\Users\Shikha - PC\Downloads\welcome 2.jpg');" data-scroll-speed="0.7">
+    <div class="content">
+      <h1>Welcome to Our Campus</h1>
+      <p>Experience the beauty and excitement of our vibrant community</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="section" id="academic" style="background-image: url('C:\Users\Shikha - PC\Downloads\academic.jpg');" data-scroll-speed="1.6">
+    <div class="content">
+      <h2>Academic Center</h2>
+      <p>Explore our state-of-the-art facilities and innovative programs</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="section" id="library" style="background-image: url('library.jpg');" data-scroll-speed="2.4">
+    <div class="content">
+      <h2>Library</h2>
+      <p>Discover a world of knowledge and resources at your fingertips</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="section" id="hostel" style="background-image: url('hostel.jpg');" data-scroll-speed="3.1">
+    <div class="content">
+      <h2>Hostel</h2>
+      <p>Experience the comfort and camaraderie of campus living</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="section" id="dining" style="background-image: url('dining.jpg');" data-scroll-speed="3.8">
+    <div class="content">
+      <h2>Dining Mess</h2>
+      <p>Savor delicious meals and enjoy a variety of dining options</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="section" id="student-center" style="background-image: url('student_center.jpg');" data-scroll-speed="4.4">
+    <div class="content">
+      <h2>Student Center</h2>
+      <p>Get involved in student organizations and social activities</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="section" id="traditions" style="background-image: url('traditions.jpg');" data-scroll-speed="4.9">
+    <div class="content">
+      <h2>Campus Traditions</h2>
+      <p>Participate in time-honored rituals and create lasting memories</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="section" id="closing" style="background-image: url('closing.jpg');" data-scroll-speed="5.4">
+    <div class="content">
+      <h1>Thank You for Visiting</h1>
+      <p>We hope you enjoyed your tour of our campus!</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+
+</body>
+</html>

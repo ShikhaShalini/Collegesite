@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>contact</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden; 
+    }
+    .content animate{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        max-width: 50px;
+        margin-left: 60px;
+        display: inline-block;
+        margin: 0 10px;
+        color: #000;
+        text-decoration: none;
+        transition: color 1.4s ease-in;
+        width: 80px;
+        height: 80px;
+        transition: transform 1.4s ease-in;
+    }
+    #section1 { background: linear-gradient(blue, pink); }
+    #section2 { background-color: #2196F3; }
+    #section3 { background: linear-gradient(red,yellow); }
+    .content {
+        max-width: 800px;
+        margin: auto;
+    }
+    .content animate {
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+    }
+    .active .animate {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+<div id="section1" class="section active">
+    <div class="content animate">
+        <h1>Welcome to Our College</h1>
+        <h2>Contact Information</h2>
+        <p>Contact us via phone or email:</p>
+        <p>Phone: +1234567890</p>
+        <p>Email: universityofindia@gmail.com</p>
+    </div>
+</div>
+<div id="section3" class="section">
+
+                <div class="container">
+                    <h2>Share This Page</h2>
+                    
+                    
+                    <div class="share-icons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.com" target="_blank" title="Share on Facebook"><img src="C:\Users\Shikha - PC\Downloads\fb.png" alt="Facebook"></a>
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com&text=Check%20out%20this%20awesome%20website%21" target="_blank" title="Share on Twitter"><img src="C:\Users\Shikha - PC\Downloads\twitter.png" alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fexample.com" target="_blank" title="Share on LinkedIn"><img src="C:\Users\Shikha - PC\Downloads\in.png" alt="LinkedIn"></a>
+                        <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20awesome%20website!%20https%3A%2F%2Fexample.com" target="_blank" title="Share on WhatsApp"><img src="C:\Users\Shikha - PC\Downloads\wa.png" alt="WhatsApp"></a>
+                        <a href="https://www.instagram.com/?url=https%3A%2F%2Fexample.com" target="_blank" title="Share on Instagram"><img src="C:\Users\Shikha - PC\Downloads\ig.png" alt="Instagram"></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+<script>
+    const sections = document.querySelectorAll('.section');
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    function toggleActiveSection() {
+        sections.forEach((section) => {
+            if (isInViewport(section)) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', toggleActiveSection);
+</script>
+
+</body>
+</html>
